@@ -13,6 +13,9 @@ import org.springframework.context.annotation.Configuration;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * 꼭 Job 이름 명시해서 사용
+ */
 @Slf4j
 @RequiredArgsConstructor
 @Configuration

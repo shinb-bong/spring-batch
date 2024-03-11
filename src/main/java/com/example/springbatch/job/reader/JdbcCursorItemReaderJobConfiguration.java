@@ -1,4 +1,4 @@
-package com.example.springbatch.job;
+package com.example.springbatch.job.reader;
 
 import javax.sql.DataSource;
 

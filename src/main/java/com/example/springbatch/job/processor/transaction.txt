@@ -1,0 +1,4 @@
+Spring Batch에서 트랜잭션 범위는 Chunk단위 입니다.
+그래서 Reader에서 Entity를 반환해주었다면 Entity간의 Lazy Loading이 가능합니다. 이는 Processor뿐만 아니라 Writer에서도 가능 합니다.
+
+CompositeItemProcessor는 ItemProcessor간의 체이닝을 지원하는 Processor라고 보시면 됩니다.
