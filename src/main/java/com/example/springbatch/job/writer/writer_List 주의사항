@@ -1,0 +1,12 @@
+
+proccesor에서 List 자료형을 Writer에게 전달했을 경우
+
+기본 JpaItemWriter는 엔티티 T를 저장하기때문에 T는 ArrayList<Tax>가 할당되고,
+ArrayList는 Entity 클래스가 아니기 때문에 오류가 발생한 것입니다.
+
+또한 전달된 값을 보면 List의 요소갯수가 아닌 최초의 chunk size 만큼 데이터가 넘어온다.
+
+그래서 그 요소들을 다시 저장이 가능한 T로 변경을 해주는 @Override 한 Writer 클래스로 만들어서 반환해주면된다.
+
+즉 JpaItemWriter -> 생성자로 넣어주고 오버라이드 시켜서 JpaItemListWriter
+(사진 참고)
